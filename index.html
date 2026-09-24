@@ -175,6 +175,14 @@
           <div class="title">لجنة العلاقات العامة والتسويق</div>
           <div class="desc">السوشيال ميديا، الهوية البصرية، والتواصل مع الكلية والجامعة</div>
         </label>
+
+        <label class="committee-card" data-value="external_events">
+          <input type="radio" name="committee" value="external_events">
+          <div class="check">✓</div>
+          <span class="emoji">🌍</span>
+          <div class="title">لجنة الفرص والإيفنتات الخارجية</div>
+          <div class="desc">البحث عن فعاليات ومؤتمرات وورش من شركات وجهات خارجية في مصر ومشاركتها مع الأسرة</div>
+        </label>
       </div>
       <div class="committee-error" id="committeeError">من فضلك اختار لجنة واحدة</div>
 
@@ -273,7 +281,8 @@ form.addEventListener('submit', async (e)=>{
     competitions: 'لجنة المسابقات',
     events: 'لجنة الفعاليات',
     learning: 'لجنة التدريب والتعلم',
-    media: 'لجنة العلاقات العامة والتسويق'
+    media: 'لجنة العلاقات العامة والتسويق',
+    external_events: 'لجنة الفرص والإيفنتات الخارجية'
   };
 
   const payload = {
